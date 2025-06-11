@@ -1,0 +1,43 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Courier New", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+#menu {
+    width: 200px;
+    padding: 20px;
+    background-color: #eeeeee;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu li {
+    margin-bottom: 10px;
+}
+
+#menu a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+#content {
+    flex: 1;
+    padding: 20px;
+}
+
+.post {
+    border-bottom: 1px dashed #000000;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
