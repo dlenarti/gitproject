@@ -15,10 +15,14 @@
             </ul>
         </nav>
         <main id="content">
-            <h1>My Timeline</h1>
-            <div class="post">
-                <p>Welcome to my brand new 90's style portfolio!</p>
-            </div>
+            <h2>Latest Posts:</h2>
+            <ul>
+                {% for post in site.posts %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
+                </li>
+                {% endfor %}
+            </ul>
         </main>
     </div>
 </body>
